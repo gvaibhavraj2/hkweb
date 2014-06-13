@@ -1,0 +1,101 @@
+<html>
+     <head>
+     	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="themes/4/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/4/js-image-slider.js" type="text/javascript"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+
+     </head>
+     <body>
+     	<div id="wrapper">
+     		<div id="header">
+     			<img src="images/logo.jpg"/>
+     			<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li><a href='#'><span>Products</span></a></li>
+   <li><a href='about.html'><span>About</span></a></li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+     		</div>
+     		<div id="main-content">
+
+
+
+     		
+
+     	
+  <div id="sliderFrame">
+        <div id="slider">
+            <img src="images/1.jpg" />
+            <img src="images/2.jpg" />
+            <img src="images/3.jpg" />
+            <img src="images/4.jpg" />
+        </div>
+        <!--Custom navigation buttons on both sides-->
+        <div class="group1-Wrapper">
+            <a onclick="imageSlider.previous()" class="group1-Prev"></a>
+            <a onclick="imageSlider.next()" class="group1-Next"></a>
+        </div>
+        <!--nav bar-->
+        <div style="text-align:center;padding:20px;z-index:20;">
+            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
+            <a id='auto' onclick="switchAutoAdvance()"></a>
+            <a onclick="imageSlider.next()" class="group2-Next"></a>
+        </div>
+    </div>
+    <div id="blocks">
+        <div><h2>PLANNING</h2></br>
+            <img class="tags" src="images/p.00_jpg_srz">
+          <p>While searching for right candidates, we get to know about those candidates who are interested in making an immediate career move. We also maintain an extensive database of professionals who are satisfied with their current positions but are also open to opportunities that will allow them to achieve their ultimate career goals. As a result, Seekers identify properly motivated candidates who choose to make positive, well-considered move toward superior opportunities.</p>
+
+        </div>
+        <div><h2>STRATEGY</h2></br>
+            <img class="tags" src="images/s.00_jpg_srz">
+            <p>Since April 2008, JAG KAMAL PLACEMENTS , one of India's fastest growing recruitment firms, has built a reputation for quality services by working for the niche segments. As our firm has grown and increased its reach, we have maintained a commitment to high performance and unsurpassed industry knowledge. We offer candidates and client companies personal service, confidentiality and the most ethical professional standards. As a result, we have placed hundreds of individuals in various positions right from Medical Representatives to Vice President and at various levels in Product Management, Human Resources, R&D, QC, QA.</p>
+
+
+        </div>
+        <div><h2>RESULTS</h2></br>
+            <img class="tags" src="images/r.00_jpg_srz">
+            <p>JAG KAMAL PLACEMENTS even though very young has received an excellent response and can lay claim to some very interesting CVs for the Junior, Middle & Sr. level  PLACEMENTS in the area of Sales, Marketing, HR and other deptt. in Pharmaceutical Industry. 
+
+JAG KAMAL PLACEMENTS has tied up with other placement Companies; to enable us to increase our reach and broaden the base for PLACEMENTS.
+
+JAG KAMAL PLACEMENTS sets an extra ordinary standard by interviewing candidates first hand before recommending them to our clients.    
+
+</p>
+
+        </div>
+
+
+    </div>
+    <div id="updates"><marquee>hlklkilrgksdfmdhbebfevwgfnbsgv msebfsnbfv sdf nsebfhwenasf neab fb</marquee></div>
+
+</div>
+</div>
+
+    
+    <script type="text/javascript">
+        //The following script is for the group 2 navigation buttons.
+        function switchAutoAdvance() {
+            imageSlider.switchAuto();
+            switchPlayPauseClass();
+        }
+        function switchPlayPauseClass() {
+            var auto = document.getElementById('auto');
+            var isAutoPlay = imageSlider.getAuto();
+            auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+            auto.title = isAutoPlay ? "Pause" : "Play";
+        }
+        switchPlayPauseClass();
+    </script>
+
+     </body>
+
+
+
+
+</html>
+
